@@ -3,6 +3,7 @@ import { Row, FormGroup, FormControl, ControlLabel, Button, HelpBlock } from 're
 import '../../assets/style/login.sass';
 import { isEmail, isEmpty, isLength, isContainWhiteSpace } from '../../services/validator';
 import Axios from 'axios';
+import NavbarCollapse from "react-bootstrap/lib/NavbarCollapse";
 
 class Login extends Component {
 
@@ -116,6 +117,7 @@ class Login extends Component {
                         }
                         </FormGroup>
                         <Button type="submit" bsStyle="primary">Sign-In</Button>
+                        <ControlLabel >Not registered signup </ControlLabel>{" "}<a onClick={()=>this.props.history.push('/register')}>here</a>
                     </form>
                 </Row>
             </div>
