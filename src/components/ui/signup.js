@@ -114,6 +114,7 @@ class SignUp extends Component {
                     }
                 </FormGroup>
                 <Button type="submit" bsStyle="primary">Sign-up</Button>
+                <ControlLabel >Go to login page </ControlLabel>{" "}<a onClick={()=>this.props.history.push('/')}>here</a>
             </form>
             </div>
         )
